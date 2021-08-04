@@ -1,0 +1,180 @@
+    :root {
+        --theme-color:#e50914;
+    }
+
+ html,
+        body,
+        header,
+        .jarallax {
+          height: 700px;
+        }
+
+        @media (max-width: 740px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 560px) and (max-width: 650px) {
+          header .jarallax h1 {
+            margin-bottom: 1.5rem !important;
+          }
+          header .jarallax h5 {
+            margin-bottom: 1.5rem !important;
+          }
+        }
+
+        .top-nav-collapse {
+            background-color: #000000!important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent!important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #000000!important;
+            }
+
+        }
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #000000!important;
+            }
+        }
+        h5 {
+            letter-spacing: 3px;
+        }
+
+   /*For all*/
+    .themeBackground{
+        background-color: var(--theme-color);
+    }
+    .themeColor{
+        color:var(--theme-color) !important;
+    }
+
+    .SignInButton{
+        background-color: var(--theme-color);
+        color: #fff;
+        border:none;
+        font-size: 16px;
+        /*cursor: pointer;*/
+    }
+    .intro-info-content h1{
+        font-size: 3.25rem;
+    }
+    .intro-info-content h5{
+        font-size: 1.625rem;
+        font-weight: 400;
+    }
+    .intro-info-content h6{
+        font-size: 19.5px;
+        font-weight: 400;
+    }
+
+    .h5{
+        /*font-family:serif;*/
+    }
+
+    .h6{
+        font-size: 50px;
+    }
+    .h7{
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .mt-10{
+        margin-top: 50px;
+    }
+    .bg-black{
+        background-color: #000000;
+    }
+    .border-bottom-thick{
+        border-bottom: 8px solid #222;
+    }
+	.curve-sides{
+		border-radius:60px;
+	}
+    .header-border{
+        border-bottom: 1px solid #fff8;
+        box-shadow: 0px 0px 8px 1px #fff8;
+    }
+    .intro-info-content a button , .getStarted a button{
+        font-size: 27px !important;
+    }
+
+    .hide-in-desktop{
+        display: none;
+    }
+
+
+
+    /*Main k liye h ye*/
+    .fixed-sn main, .hidden-sn main{
+        padding-top: 0;
+    }
+
+    .images img{
+        width: 88%;
+    }
+
+    /*Frequently asked Question*/
+    .faq-heading{
+        font-size: 50px;
+        color: #fff;
+    }
+
+
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #303030;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 2rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: 0px;
+    color: #fff;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+
+.panel .panel-collapse{
+    background-color: #303030;
+}
+
+.panel .panel-collapse p{
+    margin-bottom: 0;
+}
+
+/*Footer*/
+
+footer ul.list-unstyled li a {
+    color: #fff;
+}

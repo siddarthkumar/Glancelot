@@ -1,0 +1,47 @@
+@media (max-width: 800px) {
+    header nav .logo a img{
+	    width: 100px;
+	}
+	.intro-info-content .h1 ,.intro-info-content h1{
+		font-size: 30px !important;
+	}
+
+	.intro-info-content h5{
+		font-size: 0.950rem;
+	}
+	.intro-info-content a button , .getStarted a button{
+        font-size: 20px !important;
+    }
+
+    .h6{
+    	font-size: 1.625rem;
+    }
+    .h7{
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .mobile-centre{
+    	text-align: center;
+    }
+
+    .mt-10{
+    	margin-top: 10px;
+    }
+
+    .images img{
+        width: 100%;
+    }
+
+    .hide-in-desktop{
+        display: block;
+    }
+
+    .hide-in-mobile{
+        display: none;
+    }
+
+    .faq-heading{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+
+    <style type="text/css">
+        
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    @media (min-width: 851px) and (max-width: 1440px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 850px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1000px;
+      }
+    }
+
+    @media (min-width: 451px) and (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1200px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1400px;
+      }
+    }
+
+    .intro-2 {
+      background: url("images/signup.jpg")no-repeat center center;
+      background-size: cover;
+    }
+
+    .top-nav-collapse {
+      background-color: #3f51b5 !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #3f51b5 !important;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #3f51b5!important;
+        }
+    }
+
+    .rgba-gradient {
+      background: -webkit-linear-gradient( rgba(0,0,0, 0.8), rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5),rgba(0,0,0, 0.9) );
+      /*background: -webkit-gradient(linear, 98deg, from(rgba(22, 91, 231, 0.5)), to(rgba(255, 32, 32, 0.5)));*/
+      /*background: linear-gradient(to 98deg, rgba(0, 0, 0, 0.5), rgba(255, 32, 32, 0.5) 100%);*/
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    h6 {
+      line-height: 1.7;
+    }
+
+    .select-wrapper input.select-dropdown , .select-wrapper span.caret{
+      color: #757575;
+    }
+    .gender-design{
+      width: 90.85%;
+      margin-left: 9.15%;
+    }
+
+    /*Image Upload Part*/
+
+       .hide{
+            display: none;
+        }
+        .image-upload{
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            right: 29%;
+            bottom: 9%;
+            border:1px solid #000; 
+            background-color: #fff;
+        }
+        .image-upload img{
+            position: relative;
+            left: 11px;
+            bottom: 3px;    
+            width: 25px;
+        }
+
+        .image-upload img:hover{
+            cursor: pointer;
+        }
+
+        @media(max-width: 600px){
+            .image-upload{
+                width: 30px;
+                height: 30px;
+            }
+            .image-upload img{
+                left: 6px;
+                bottom: 10px;
+                width: 19px;
+            }
+        }
+
+    /*Image Uplaod Part*/
+	    ul.code-alrt-inputs.signup-code-list li {
+		    list-style: none;
+		    width: 15%;
+		    display: inline-block;
+		    margin: 5px;
+		}
+		
+		.swal2-popup.swal2-modal.swal2-show {
+		    background: #000;
+		    border: 2px solid #fff;
+		    border-radius: 20px;
+		    box-shadow: 0 0 8px 1px #fff;
+		}
+		h2#swal2-title{
+		    color: var(--theme-color);
+		    font-family: 'Font Awesome 5 Free';
+		}
+		
+		a.chck-btn.hover-btn.code-btn145.varifyOTP , .resendOtp{
+			color:var(--theme-color);
+		}
+		
+		.popUp-text{
+			color:#fff;
+		}
+		
+    </style>
+
+</head>
+<body> 
+    
+    <!--Intro Section-->
+    <section class="view intro-2 text-white">
+        <div class="mask rgba-gradient">
+          <div class="container mt-3 d-flex justify-content-center align-items-center">
+
+            <!--Grid row-->
+            <div class="row  pt-5 mt-3">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="card">
+                  <div class="card-body">
+
+                    <h2 class="font-weight-bold my-4 text-center mb-3 mt-1 font-weight-bold">
+                      <strong style="font-family: ui-sans-serif"><u><i>Sign Up</i></u></strong>
+
+                    </h2>
+                    <hr>
+
+                    <!--Grid row-->
+                    <div class="row mt-5">
+
+                      <!--Grid column-->
+                      <div class="col-md-6 ml-lg-5 ml-md-3">
+
+                        <!--Grid row-->
+                        <div class="row pb-4">
+                          <div class="col-2 col-lg-1">
+                            <i class="fas fa-university themeColor fa-lg"></i>
+                          </div>
+                          <div class="col-10">
+                            <h4 class="font-weight-bold mb-4">
+                              <strong>Buisiness</strong>
+                            </h4>
+                            <p class="">Have an idea of Buisiness ? Need a Website for it ? - Do not Hesitate ! We are here to help you grow your buisiness 
+                            in your each and every step with your own Website for what you have in store for the world . All you need to do is <a href="home.html">Contact us</a></p>
+                          </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row pb-4">
+                          <div class="col-2 col-lg-1">
+                            <i class="fas fa-desktop themeColor fa-lg"></i>
+                          </div>
+                          <div class="col-10">
+                            <h4 class="font-weight-bold mb-4">
+                              <strong>Technology</strong>
+                            </h4>
+                            <p class="">We are a group of people who are just passionate about Technology . For Best Performance and output
+                            We rely on one of the most popular language for Backend and Security i.e <a href ="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
+                            and for the Designing part we have world class Designing skills to make your Buisiness appealing in the best way possible!
+                            </p>
+                          </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row pb-4">
+                          <div class="col-2 col-lg-1">
+                            <i class="fas fa-money-bill-alt themeColor fa-lg"></i>
+                          </div>
+                          <div class="col-10">
+                            <h4 class="font-weight-bold mb-4">
+                              <strong>Pricing</strong>
+                            </h4>
+                            <p class="">All though we are a group of youngsters but what we believe in is Hardwork and Customer Satisfaction All your requirements will be satisfied  at cost effective prices
+                            we are just one call or an email away! 
+                            </p>
+                          </div>
+                        </div>
+                        <!--Grid row-->
+
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-5">
+
+                        <!--Grid row-->
+                        <!-- <div class="row pb-4 d-flex justify-content-center mb-4">
+
+                          <h4 class="mt-3 mr-4">
+                            <strong>Login with</strong>
+                          </h4>
+
+                          <div class="inline-ul text-center d-flex justify-content-center">
+                            <a class="p-2 m-2 fa-lg tw-ic">
+                              <i class="fab fa-twitter fa-lg indigo-text"></i>
+                            </a>
+                            <a class="p-2 m-2 fa-lg li-ic">
+                              <i class="fab fa-linkedin-in fa-lg indigo-text"> </i>
+                            </a>
+                            <a class="p-2 m-2 fa-lg ins-ic">
+                              <i class="fab fa-instagram fa-lg indigo-text"> </i>
+                            </a>
+                          </div>
+
+                          <h4 class="mt-3 ml-4">
+                            <strong>or:</strong>
+                          </h4>
+
+                        </div> -->
+                        <!--/Grid row-->
+
+                        <!--Body-->
+
+                        <div class="md-form  m-0">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" class="rounded-circle img-responsive" width="36%"  style="margin: auto;" id="userPhoto">
+                          <div class="image-upload">
+                            <label for="file-input" >
+                              <img src="https://icon-library.net/images/upload-photo-icon/upload-photo-icon-21.jpg" />
+                            </label>
+                            <!--<input id="file-input" type="file" name="photo" class="hide" onchange="readPhotoURL(this);"/>-->
+                          </div>
+                        </div>
+                             <form action="registered" id="signUpForm">
+                        <div class="md-form">
+                          <i class="fas fa-user themeColor prefix"></i>
+                          <input type="text" name="name" id="orangeForm-name" class="form-control">
+                          <label for="orangeForm-name">Your Name</label>
+                        </div>
+
+                        <div class="md-form">
+                          <i class="fas fa-envelope themeColor prefix"></i>
+                          <input type="email" name="email" id="orangeForm-email" class="form-control">
+                          <label for="orangeForm-email">Your Email</label>
+                        </div>
+                        
+                        <div class="md-form">
+                          <i class="fas fa-lock themeColor prefix"></i>
+                          <input type="password" name="password" id="orangeForm-password" class="form-control">
+                          <label for="orangeForm-password">Your Password</label>
+                          <span id="show-password" class="ml-5" style="float: right; font-size: 12px;" onclick="showHidePassword(this,'orangeForm-password')">
+                            Show Password
+                          </span>
+                        </div>
+
+                        <div class="md-form">
+                          <i class="fas fa-phone themeColor prefix"></i>
+                          <input type="text" name="phone" id="orangeForm-pass" class="form-control">
+                          <label for="orangeForm-pass">Mobile</label>
+                        </div>
+
+                        <div class="md-form">
+                          <i class="fas fa-lock themeColor prefix"></i>
+                          <input type="text" name="age" id="orangeForm-pass" class="form-control">
+                          <label for="orangeForm-pass">Age</label>
+                        </div>
+
+                        <div class="md-form text-white">
+                          <i class="fas fa-mars themeColor prefix"></i>
+                          <select class="mdb-select md-form colorful-select dropdown-dark gender-design" name="gender">
+                            <option value="0" disabled="" selected="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>                       
+
+                        <div class="text-center">
+                          <button  type="button" class="btn themeBackground btn-rounded mt-4" onClick="submit_form()">Sign up</button>
+                        </div>
+						</form>
+                      </div>
+                      <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                  </div>
+                </div>
+
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+          </div>
+        </div>
+    </section>
+    <!--Intro Section-->
+  <!--Main Navigation-->
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.1.2.min.js"></script>
+    <script type="text/javascript" src="js/Signup.js"></script>
+    <script>
+        // Material Select Initialization
+      $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+      });
+        
+      function showHidePassword(data,passwordFieldId){
+          var type = $("#"+passwordFieldId).attr("type");
+          if (type==="password") {
+            $("#"+passwordFieldId).attr("type","text");
+            $(data).html("Hide Password");
+          }
+          else{
+            $("#"+passwordFieldId).attr("type","password"); 
+            $(data).html("Show Password");
+
+
+          }
+        }
+
+      function readPhotoURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function (e) {
+                  $('#userPhoto')
+                      .attr('src', e.target.result)
+                      .width(154)
+                      .height(154);
+              };
+
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+    </script>
+</body>
+</html>
